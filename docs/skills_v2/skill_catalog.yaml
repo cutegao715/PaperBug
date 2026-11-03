@@ -1,0 +1,288 @@
+schema_version: '1'
+total_skills: 35
+dimensions:
+  ownership:
+  - general
+  - lifecycle_specific
+  layers:
+  - general
+  - domain
+  - task
+  - project
+  lifecycle:
+  - project
+  - paper_conference
+  - thesis
+workflows:
+  G1_grant_application:
+    lifecycle: project
+    name: 项目申报
+    core:
+    - requirements_interpretation
+    - grant_application
+    - research_question_formulation
+    - grant_review
+    support:
+    - literature_review
+    - research_design
+    - methodology
+    - citation_verification
+    - academic_writing
+    confirm:
+    - 研究选题
+    - 研究设计
+    - 大纲
+    - 正式交付版
+    skill_recommendations:
+    - skill_id: requirements_interpretation
+      version: '1.0'
+    - skill_id: grant_application
+      version: '1.0'
+    - skill_id: research_question_formulation
+      version: '1.0'
+    - skill_id: grant_review
+      version: '1.0'
+  G2_grant_midterm:
+    lifecycle: project
+    name: 项目中期
+    core:
+    - requirements_interpretation
+    - grant_midterm_report
+    - project_evidence_review
+    support:
+    - academic_writing
+    - scientific_figure
+    confirm:
+    - 真实进度
+    - 偏差说明
+    - 阶段成果
+    skill_recommendations:
+    - skill_id: requirements_interpretation
+      version: '1.0'
+    - skill_id: grant_midterm_report
+      version: '1.0'
+    - skill_id: project_evidence_review
+      version: '1.0'
+  G3_grant_closeout:
+    lifecycle: project
+    name: 项目结题
+    core:
+    - requirements_interpretation
+    - grant_closeout_report
+    - project_evidence_review
+    support:
+    - academic_writing
+    - citation_verification
+    confirm:
+    - 完成成果
+    - 证据材料
+    - 未达指标说明
+    skill_recommendations:
+    - skill_id: requirements_interpretation
+      version: '1.0'
+    - skill_id: grant_closeout_report
+      version: '1.0'
+    - skill_id: project_evidence_review
+      version: '1.0'
+  P1_paper_writing:
+    lifecycle: paper_conference
+    name: 期刊/会议论文编写
+    core:
+    - research_question_formulation
+    - research_design
+    - literature_review
+    - academic_writing
+    - paper_review
+    support:
+    - methodology
+    - experiment_design
+    - evidence_synthesis
+    - citation_verification
+    - abstract_title
+    - scientific_figure
+    - paper_revision
+    - reproducibility_reporting
+    confirm:
+    - 研究问题
+    - 研究方案
+    - 大纲
+    - 重大修订
+    skill_recommendations:
+    - skill_id: research_question_formulation
+      version: '1.0'
+    - skill_id: research_design
+      version: '1.0'
+    - skill_id: literature_review
+      version: '1.0'
+    - skill_id: academic_writing
+      version: '1.0'
+    - skill_id: paper_review
+      version: '1.0'
+  P2_venue_matching:
+    lifecycle: paper_conference
+    name: 投稿机会与期刊匹配
+    core:
+    - journal_strategy
+    - requirements_interpretation
+    - submission_preparation
+    support:
+    - paper_review
+    - abstract_title
+    - reproducibility_reporting
+    confirm:
+    - 目标刊会
+    - 投稿版本
+    skill_recommendations:
+    - skill_id: journal_strategy
+      version: '1.0'
+    - skill_id: requirements_interpretation
+      version: '1.0'
+    - skill_id: submission_preparation
+      version: '1.0'
+  P3_submission_tracking:
+    lifecycle: paper_conference
+    name: 投稿与追踪
+    core:
+    - submission_tracking
+    - reviewer_response
+    - paper_revision
+    support:
+    - submission_preparation
+    - requirements_interpretation
+    - paper_review
+    confirm:
+    - 对外提交
+    - 重大返修方案
+    - 回复审稿人
+    skill_recommendations:
+    - skill_id: submission_tracking
+      version: '1.0'
+    - skill_id: reviewer_response
+      version: '1.0'
+    - skill_id: paper_revision
+      version: '1.0'
+  T1_thesis_proposal:
+    lifecycle: thesis
+    name: 毕业论文开题
+    core:
+    - thesis_planning
+    - requirements_interpretation
+    - research_question_formulation
+    - research_design
+    support:
+    - literature_review
+    - academic_writing
+    - methodology
+    - scientific_presentation
+    confirm:
+    - 选题
+    - 研究问题
+    - 开题方案
+    skill_recommendations:
+    - skill_id: thesis_planning
+      version: '1.0'
+    - skill_id: requirements_interpretation
+      version: '1.0'
+    - skill_id: research_question_formulation
+      version: '1.0'
+    - skill_id: research_design
+      version: '1.0'
+  T2_thesis_midterm:
+    lifecycle: thesis
+    name: 毕业论文中期
+    core:
+    - thesis_midterm_report
+    - requirements_interpretation
+    support:
+    - paper_revision
+    - thesis_planning
+    confirm:
+    - 实际进度
+    - 重大调整
+    - 中期报告
+    skill_recommendations:
+    - skill_id: thesis_midterm_report
+      version: '1.0'
+    - skill_id: requirements_interpretation
+      version: '1.0'
+  T3_thesis_writing:
+    lifecycle: thesis
+    name: 毕业论文终稿
+    core:
+    - thesis_planning
+    - academic_writing
+    - paper_revision
+    - paper_review
+    support:
+    - methodology
+    - evidence_synthesis
+    - citation_verification
+    - scientific_figure
+    - reproducibility_reporting
+    - abstract_title
+    confirm:
+    - 整体框架
+    - 重大调整
+    - 最终稿
+    skill_recommendations:
+    - skill_id: thesis_planning
+      version: '1.0'
+    - skill_id: academic_writing
+      version: '1.0'
+    - skill_id: paper_revision
+      version: '1.0'
+    - skill_id: paper_review
+      version: '1.0'
+  T4_thesis_defense:
+    lifecycle: thesis
+    name: 盲审与答辩
+    core:
+    - thesis_blind_review_defense
+    - paper_review
+    - paper_revision
+    - scientific_presentation
+    support:
+    - requirements_interpretation
+    - citation_verification
+    - scientific_figure
+    confirm:
+    - 盲审意见修正
+    - 答辩材料
+    - 正式归档版
+    skill_recommendations:
+    - skill_id: thesis_blind_review_defense
+      version: '1.0'
+    - skill_id: paper_review
+      version: '1.0'
+    - skill_id: paper_revision
+      version: '1.0'
+    - skill_id: scientific_presentation
+      version: '1.0'
+proactive_services:
+  research_radar:
+  - research_radar
+  - literature_review
+  - research_question_formulation
+  opportunity_radar:
+  - research_radar
+  - journal_strategy
+  - requirements_interpretation
+  progress_watcher:
+  - submission_tracking
+  - project_evidence_review
+  - grant_midterm_report
+  - thesis_midterm_report
+scoped_optional:
+  discipline:
+  - computer_science_discipline
+  - economics_discipline
+  - education_discipline
+  - management_discipline
+  - materials_discipline
+  - medicine_discipline
+  review_type:
+  - systematic_review_prisma
+  experiment:
+  - experiment_design
+  evidence:
+  - evidence_synthesis

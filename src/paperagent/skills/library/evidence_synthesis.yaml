@@ -1,0 +1,49 @@
+id: evidence_synthesis
+capability_type: general
+version: '1.0'
+layer: task
+scope:
+  task_type: synthesis
+triggers:
+- evidence
+- synthesis
+- compare literature
+- research gap
+- 证据
+- 综合
+- 研究空白
+principles:
+- Synthesis compares evidence; it does not merely summarize papers one by one.
+- Research gaps must be grounded in observed limitations, contradictions, or missing
+  contexts.
+procedure:
+- Group evidence cards by construct, method, population, finding, and limitation.
+- Compare convergent, divergent, and missing evidence across sources.
+- Distinguish empirical findings from author interpretations and review claims.
+- Derive candidate gaps and test whether each gap leads to a researchable question.
+- Produce synthesis claims with source coverage and confidence notes.
+heuristics:
+- A gap is stronger when multiple evidence cards point to the same absence or tension.
+- Use method and context differences to explain apparent contradictions.
+anti_patterns:
+- Calling any under-studied topic a gap without showing why it matters.
+- Mixing evidence from different populations without noting transfer limits.
+checklist:
+- Each synthesis claim cites more than one source when possible.
+- Contradictions are explained or explicitly left as unresolved.
+tool_preferences:
+- evidence_extract
+- embedding_search
+quality_requirements:
+- evidence_before_synthesis
+output_contract:
+  artifact: synthesis_matrix
+resources:
+- id: thematic_synthesis
+  path: references/general/thematic-synthesis.md
+  description: 主题综合与情境比较
+  when: 组织研究现状、证据分歧或缺口时
+- id: matrix
+  path: references/research/evidence-matrix.md
+  description: 从已有证据形成综合矩阵
+  when: 按主题综合证据或处理反例时

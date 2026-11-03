@@ -1,0 +1,26 @@
+id: management_discipline
+capability_type: general
+version: "1.0"
+layer: domain
+scope:
+  discipline: management
+triggers:
+  - management
+  - information systems
+  - organizational
+  - 管理
+  - 信息系统
+principles:
+  - Link phenomenon, theory, constructs, hypotheses, measurement, and analysis.
+procedure:
+  - Identify theory role and construct definitions before writing hypotheses.
+  - Check construct validity, sampling, common method bias, and robustness.
+  - Keep contribution statements tied to theory, method, and practice.
+heuristics:
+  - Survey and archival designs need explicit identification or limitation language.
+  - Managerial implications should follow from findings, not generic advice.
+quality_requirements:
+  - construct_validity
+  - method_design_alignment
+output_contract:
+  discipline: management

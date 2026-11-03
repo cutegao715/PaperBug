@@ -1,0 +1,33 @@
+id: project_evidence_review
+capability_type: lifecycle_specific
+version: '1.0'
+name: 项目目标与成果证据核查
+description: 核对科研项目的目标、实际进展、成果声明与来源；可用于日常评审、中期或结题材料。
+layer: task
+scope:
+  lifecycle_types:
+  - project
+triggers:
+- 目标完成
+- 成果核查
+- 进展核查
+- 结题
+- 项目评审
+- project evidence
+principles:
+- Select only the checks relevant to the current request; this is not an ordered checklist.
+- An approved objective is a promise, not evidence of completion. Missing evidence is unknown, not zero.
+- Keep project-specific facts, decisions and results in the workspace, never in this shared skill.
+procedure:
+- When assessing achievement, read the bound baseline and confirmed objectives with their versions.
+- Read relevant progress, outputs, issues and decisions across stages, including full sources where needed.
+- Compare each factual claim with applicable records, dates, units and evidence; explain uncertainty or contradictions.
+- Separate completed work, unfinished work, changed objectives and future plans; allow honest partial completion.
+- If sources or objectives changed, recheck affected claims without rewriting historical reports automatically.
+- Return findings with source pointers and suggested corrections within the requested review scope.
+anti_patterns:
+- Inferring actual achievements from proposed outputs or a previous generated draft.
+- Treating a user-confirmed record as independent external verification.
+- Requiring all project records or all stages for a local text review.
+output_contract:
+  artifact: scoped_project_evidence_findings

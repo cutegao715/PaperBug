@@ -1,0 +1,8 @@
+id: task_001_offline_overview
+mode: scripted
+provider: offline_stub
+goal: "literature overview of LLM-based research agents"
+expectations:
+  status: finished
+  min_references: 2
+  must_pass_kernel: true

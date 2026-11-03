@@ -1,0 +1,37 @@
+id: grant_closeout_report
+version: '1.0'
+name: 项目结题与验收
+layer: task
+capability_type: lifecycle_specific
+scope:
+  lifecycle_types:
+  - project
+  task_type: grant_closeout
+triggers:
+- 项目结题
+- 结题报告
+- 成果验收
+- 结项
+- final project report
+- grant closeout
+principles:
+- Approved targets are promises; only verified realized outputs can count as achievements.
+- Official closeout template and applicable assessment criteria override a generic report outline.
+procedure:
+- Read approved proposal, task/contract, midterm report, amendments and closeout instructions, preserving versions.
+- Build target -> actual progress -> evidence file -> acceptance criterion matrix.
+- Request confirmations on actual outputs, budget and deviations; record missing evidence rather than inferring
+  completion.
+- Draft section-by-section to the official closeout template with source pointers.
+- Run evidence reconciliation and acceptance-risk review; deliver report and annotated evidence index.
+anti_patterns:
+- Copying proposal future tense into an achievements section.
+- Claiming promised papers or patents were published or granted without proof.
+output_contract:
+  artifact: grant_closeout_package
+  fields:
+  - report
+  - target_actual_evidence_matrix
+  - unfulfilled_items
+  - evidence_index
+  - review_risks

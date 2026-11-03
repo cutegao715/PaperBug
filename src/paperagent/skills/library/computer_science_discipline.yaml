@@ -1,0 +1,33 @@
+id: computer_science_discipline
+capability_type: general
+version: "1.0"
+layer: domain
+scope:
+  discipline: computer_science
+triggers:
+  - computer science
+  - algorithm
+  - benchmark
+  - ablation
+  - 计算机
+  - 算法
+principles:
+  - Claims must be backed by reproducible experiments, baselines, metrics, and complexity reasoning.
+procedure:
+  - Specify task, dataset, baseline, metric, implementation details, and compute budget.
+  - Separate method novelty, empirical gain, ablation insight, and limitation.
+  - Track reproducibility artifacts such as code, seeds, hardware, and configuration.
+heuristics:
+  - A strong empirical paper explains why the method works, not only that it improves a score.
+  - Ablations should isolate components that map to the claimed contribution.
+quality_requirements:
+  - reproducibility
+  - benchmark_validity
+output_contract:
+  discipline: computer_science
+
+resources:
+- id: ml_reporting
+  path: references/domain/ml-reporting.md
+  description: 机器学习评估与报告
+  when: 实际包含 ML 训练或评估时

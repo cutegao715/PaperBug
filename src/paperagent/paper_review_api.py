@@ -1,0 +1,10 @@
+"""Compatibility entry point for the versioned review router."""
+from paperagent.api.v1.review import *  # retain existing request models
+from paperagent.api.v1.review import create_router
+
+
+def register_paper_review_routes(app, resolve_ws, idle):
+    router = create_router(resolve_ws, idle)
+    if app is not None:
+        app.include_router(router, prefix="/api")
+    return router

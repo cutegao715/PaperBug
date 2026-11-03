@@ -1,0 +1,44 @@
+id: reviewer_response
+capability_type: lifecycle_specific
+version: '1.0'
+name: 回复审稿人
+description: 基于已有审稿意见组织回应、核对实际修改和回复信；独立论文评审使用 paper_review。
+layer: task
+scope:
+  task_type: revision
+  lifecycle_types:
+  - paper_conference
+triggers:
+- reviewer response
+- reviewer comments
+- response letter
+- revise and resubmit
+- 审稿意见
+- 回复信
+- 返修
+- 回复审稿人
+principles:
+- Address every supplied reviewer point; distinguish verified requirements, suggestions and preferences, and support
+  disagreement with evidence.
+- A response saying fixed is not proof of a repair; verify the current manuscript and relevant companion artifacts
+  before claiming completion.
+- Use a respectful tone while preserving defensible scholarly judgment.
+procedure:
+- Split reviewer text into atomic comments.
+- Classify each comment as conceptual, methodological, evidence, writing, citation, formatting, or out-of-scope.
+- Decide accept, partially accept, clarify, or respectfully disagree for each point.
+- Draft a response that states the action, location of change, and rationale.
+- Update a revision checklist so manuscript edits and response letter stay synchronized.
+heuristics:
+- Start with appreciation, then answer concretely without over-apologizing.
+- When disagreeing, add evidence or journal-scope reasoning and offer a clarifying edit.
+anti_patterns:
+- Answering multiple comments with one vague paragraph.
+- Claiming a manuscript change without a section or paragraph anchor.
+checklist:
+- Every reviewer comment has one explicit response.
+- Major method or theory changes are reflected in abstract, contribution, and limitations if needed.
+quality_requirements:
+- reviewer_comment_coverage
+output_contract:
+  artifact: response_letter_matrix

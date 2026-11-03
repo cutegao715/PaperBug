@@ -1,0 +1,35 @@
+{
+  "workflow_entries": [
+    "G1",
+    "G2",
+    "G3",
+    "P1",
+    "P2",
+    "P3",
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "console_errors": [],
+  "prototype_unchanged": true,
+  "verified": [
+    "file selectors",
+    "partial scope and exact chat case",
+    "unsaved text preservation",
+    "submission state and revision round",
+    "rejected retarget record",
+    "submission ZIP",
+    "defense PPTX and notes download",
+    "mobile overflow",
+    "failed work/home messages retained",
+    "draft focus persisted after reload"
+  ],
+  "pytest": {
+    "passed": 330,
+    "skipped": 1
+  },
+  "protected_files_verified": 6,
+  "wheel_sha256": "3c6d206bdf128cfa2934aaa0b6b8f94d6166b74ceb6d3350aa0364d1497ef4fc",
+  "package_matches_current_source": true
+}

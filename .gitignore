@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.venv/
+.idea/
+.test-tmp/
+build/
+dist/
+.env
+workspace/
+*.log
+cloud-data/
+
+# Local configuration and generated packages
+.env.*
+!.env.example
+*.whl
+
+# Downloaded source repositories and reference materials
+/github/
+/reference/
+/skills包/
+
+# Local research feedback
+/paperagent.txt

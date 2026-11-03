@@ -1,0 +1,10 @@
+id: task_004_search_cap
+mode: scripted
+provider: offline_stub
+goal: "policy caps search result count"
+policy:
+  max_search_results: 2
+expectations:
+  status: finished
+  min_references: 2
+  must_pass_kernel: true

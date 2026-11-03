@@ -1,0 +1,16 @@
+{
+  "pytest": {
+    "passed": 320,
+    "skipped": 1
+  },
+  "browser": [
+    "LIFECYCLE_V1_UI_OK",
+    "V6_BROWSER_OK"
+  ],
+  "native_skills": 35,
+  "resource_references": 39,
+  "workflows": 10,
+  "proactive_services": 3,
+  "wheel": "exports\\lifecycle-v1\\package\\paperagent-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "49a247eb72d5ce8891d642085226e49775d253600a451c312cccccde50195400"
+}

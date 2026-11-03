@@ -1,0 +1,31 @@
+id: thesis_midterm_report
+version: '1.0'
+name: 毕业论文中期检查
+layer: task
+capability_type: lifecycle_specific
+scope:
+  lifecycle_types:
+  - thesis
+  task_type: thesis_midterm
+triggers:
+- 毕业论文中期
+- 学位论文中期
+- 学位中期检查
+- thesis midterm
+- thesis progress
+procedure:
+- Read approved thesis proposal, schedule, university midterm template and advisor feedback.
+- Collect real completed chapters, studies, data, experiments, difficulties and revised plans.
+- Compare milestones against completion evidence; separate completed, pending, delayed and changed.
+- Draft midterm report in the required template, disclose gaps and explain corrective actions.
+- Prepare next-stage task schedule and advisor-confirmation checklist.
+anti_patterns:
+- Using the original proposal as evidence that work has been finished.
+- Inventing experiments or collected sample sizes.
+output_contract:
+  artifact: thesis_midterm_package
+  fields:
+  - midterm_report
+  - progress_matrix
+  - risks
+  - next_steps

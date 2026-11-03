@@ -1,0 +1,46 @@
+review_date: '2026-10-28'
+sources:
+- repo: KalarisLabs/research-agent-skills
+  skill: systematic-review-prisma
+  url: https://github.com/KalarisLabs/research-agent-skills/blob/main/skills/systematic-review-prisma/SKILL.md
+  sha: 5135a35620db1381709fe62e4dcada47f9daa4bd
+  license: MIT
+  handling: researched_adapted_to_native_yaml
+  native_skill: systematic_review_prisma
+  note: Upstream scripts not imported or run.
+- repo: KalarisLabs/research-agent-skills
+  skill: reproducibility-statement
+  url: https://github.com/KalarisLabs/research-agent-skills/blob/main/skills/reproducibility-statement/SKILL.md
+  sha: e00a9f3d4eb76b1e7629e97a755b44ab6c4fbc61
+  license: MIT
+  handling: researched_adapted_to_native_yaml
+  native_skill: reproducibility_reporting
+- repo: KalarisLabs/research-agent-skills
+  skill: abstract-and-title
+  url: https://github.com/KalarisLabs/research-agent-skills/blob/main/skills/abstract-and-title/SKILL.md
+  sha: 87f7ba04620f5665c7cef914b5a42c20f84459fc
+  license: MIT
+  handling: researched_adapted_to_native_yaml
+  native_skill: abstract_title
+- repo: KalarisLabs/research-agent-skills
+  skill: cover-letter-to-editor
+  url: https://github.com/KalarisLabs/research-agent-skills/blob/main/skills/cover-letter-to-editor/SKILL.md
+  sha: c42597c92dc37793590282635e2d12f002050e40
+  license: MIT
+  handling: researched_integrated_existing
+  native_skill: submission_preparation
+- repo: wanshuiyin/Auto-claude-code-research-in-sleep
+  skill: grant-proposal
+  url: https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/main/skills/grant-proposal/SKILL.md
+  license: check_upstream
+  handling: reviewed_only_not_integrated
+  native_skill: grant_application
+  note: Contains hard-coded process and changing NSFC criteria; do not import wholesale.
+- repo: K-Dense-AI/claude-scientific-writer
+  skill: research-grants
+  url: https://github.com/K-Dense-AI/claude-scientific-writer/blob/main/.claude/skills/research-grants/SKILL.md
+  sha: 9b86a8ae4c5e0dee221a31f86c3a2bba82da60de
+  license: MIT
+  handling: reviewed_only
+  native_skill: grant_application
+  note: US-focused agency rules require dated source verification for Chinese users.

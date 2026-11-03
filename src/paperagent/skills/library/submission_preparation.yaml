@@ -1,0 +1,73 @@
+id: submission_preparation
+version: '1.0'
+name: 期刊与会议投稿材料准备
+description: 准备期刊和会议投稿材料、模板适配与提交前核查。
+capability_type: lifecycle_specific
+layer: task
+scope:
+  lifecycle_types:
+  - paper_conference
+triggers:
+- 投稿准备
+- 投稿包
+- 投稿材料
+- Cover Letter
+- submission package
+- conference
+- cfp
+- camera-ready
+- workshop
+- 会议
+- 会议论文
+- 征稿
+- 编辑Cover Letter
+- 编辑来信
+- 投稿信
+- presubmission inquiry
+principles:
+- Use only relevant methods; a workflow and a complete setup are not prerequisites.
+- Reuse workspace evidence, sources, versioned drafts and existing review records; never invent research facts or
+  official rules.
+procedure:
+- Read the relevant existing materials and choose internal resources by the current request.
+- Perform only available tools and state the exact checks, unavailable capabilities and remaining review needs.
+- Extract CFP scope, tracks, submission format, anonymity rules, dates, and proceedings policy.
+- Match the manuscript contribution to one track and audience.
+- Check page limit, template, supplementary material policy, and camera-ready requirements.
+- Prepare abstract, keywords, contribution statement, and reproducibility notes.
+- Track review, rebuttal, acceptance, camera-ready, presentation, and poster milestones.
+- For editor-facing correspondence, build a venue-specific one-page cover letter that states the verified result,
+  novelty, readership match, and true declarations; never invent author consent, exclusivity or reviewer contacts.
+- Confirm which documents are required on initial submission vs revision vs camera-ready stage; do not force final
+  formatting too early.
+resources:
+- id: requirements
+  path: references/research/submission-preparation.md
+  description: 刊会与阶段要求
+  when: 核对投稿材料需求时
+- id: delivery
+  path: references/research/submission-delivery.md
+  description: 本地投稿包制作与复核
+  when: 生成或更新投稿文件时
+tool_preferences:
+- submission_package
+- research_output_check
+- web_search
+- page_fetch
+- html_extract
+- opportunity_extract
+output_contract:
+  artifact: requested_research_output
+  checks: Report only work actually performed; source linkage does not certify scientific validity or compliance.
+heuristics:
+- A conference paper usually needs a sharper contribution claim than a journal draft.
+- CFP wording and recent accepted papers are stronger fit evidence than broad conference themes.
+anti_patterns:
+- Ignoring double-blind rules in acknowledgements, filenames, or self-citations.
+- Treating camera-ready changes as ordinary revision without checking reviewer constraints.
+checklist:
+- Submission format and anonymity are verified against the CFP.
+- Deadline, notification date, and camera-ready date are stored as project deadlines.
+quality_requirements:
+- cfp_fit
+- submission_compliance

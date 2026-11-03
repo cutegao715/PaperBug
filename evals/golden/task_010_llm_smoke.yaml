@@ -1,0 +1,7 @@
+id: task_010_llm_smoke
+mode: llm
+goal: "one real LLM run: search, save, draft a two-paragraph overview, finish"
+expectations:
+  status: finished
+  min_references: 2
+  must_pass_kernel: true

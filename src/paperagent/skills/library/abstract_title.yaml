@@ -1,0 +1,33 @@
+id: abstract_title
+version: '1.0'
+name: 标题摘要与关键词写作
+layer: task
+capability_type: general
+scope:
+  domain: research_writing
+triggers:
+- 摘要
+- abstract
+- title
+- 关键词
+- Highlights
+- significance statement
+- 论文标题
+- 图文摘要
+principles:
+- Derive abstract findings only from completed results and avoid numbers not in the study.
+- Follow the current target venue and article-type format, word and keyword limits.
+procedure:
+- Identify audience, genre and verified required format.
+- Identify the central contribution, key method, actual results, limitations and significance.
+- Draft titles and structured or unstructured abstract as applicable; prioritize specific evidence over hype.
+- Check every number and finding against source manuscript and respect limits.
+- Return preferred version, alternatives and unresolved data/format issues.
+output_contract:
+  artifact: title_abstract_keywords
+  fields:
+  - title_options
+  - abstract
+  - keywords
+  - compliance
+  - missing_results

@@ -1,0 +1,40 @@
+id: grant_review
+version: '1.0'
+name: 项目申请专项评审
+description: 按当前范围审阅申请论证、可读性或适用指南，复用版本化评审与后续复核。
+capability_type: lifecycle_specific
+layer: task
+scope:
+  lifecycle_types:
+  - project
+triggers:
+- 申请书评审
+- 项目申请评审
+- 基金评审
+- grant review
+- proposal review
+principles:
+- Use only relevant methods; a workflow and a complete setup are not prerequisites.
+- Reuse workspace evidence, sources, versioned drafts and existing review records; never invent research facts or
+  official rules.
+procedure:
+- Read the relevant existing materials and choose internal resources by the current request.
+- Perform only available tools and state the exact checks, unavailable capabilities and remaining review needs.
+resources:
+- id: review
+  path: references/research/grant-review.md
+  description: 专项评审与报告
+  when: 审阅申请正文或返修时
+- id: readability
+  path: references/research/grant-readability.md
+  description: 申请书可读性
+  when: 只检查表达与论证可理解性时
+- id: funder
+  path: references/research/funder-overlays.md
+  description: 资助类型与标准来源
+  when: 按特定指南或机构开展评审时
+tool_preferences:
+- pdf_reader
+output_contract:
+  artifact: requested_research_output
+  checks: Report only work actually performed; source linkage does not certify scientific validity or compliance.

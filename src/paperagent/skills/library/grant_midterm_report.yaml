@@ -1,0 +1,42 @@
+id: grant_midterm_report
+capability_type: lifecycle_specific
+version: '1.0'
+name: 中期进展分析与报告
+description: 对照获批目标整理实际进展、偏差、成果和后续计划，按当前请求选用相关方法。
+layer: task
+scope:
+  task_type: grant_midterm
+  project_type: grant_midterm
+  lifecycle_types:
+  - project
+triggers:
+- midterm
+- progress report
+- grant report
+- project inspection
+- 中期
+- 中期检查
+- 进展报告
+procedure:
+- Extract approved proposal objectives, work packages, milestones, budget, and promised outputs.
+- Compare completed work against each promised milestone.
+- Summarize publications, datasets, software, reports, events, students trained, and social impact.
+- Explain deviations, risks, budget use, and corrective actions without overstating progress.
+- Prepare next-stage plan with dates, deliverables, and responsibility owners.
+heuristics:
+- Reviewers want traceability from original proposal to actual progress.
+- Delays are safer when paired with evidence, revised schedule, and risk controls.
+anti_patterns:
+- Listing activities without mapping them to approved objectives.
+- Hiding deviations until the final report.
+checklist:
+- Every original objective is marked completed, in progress, delayed, or changed with reason.
+- Evidence files and outputs are attached or referenced.
+tool_preferences:
+- file_import
+- document_write
+- quality_check
+quality_requirements:
+- grant_progress_traceability
+output_contract:
+  artifact: grant_midterm_report

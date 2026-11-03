@@ -1,0 +1,35 @@
+id: literature_review
+capability_type: general
+version: '1.0'
+layer: task
+scope:
+  task_type: literature
+triggers:
+- literature
+- review
+- survey
+- paper
+procedure:
+- Translate the research question into searchable concepts.
+- Search broadly, then save only relevant references.
+- Extract short evidence cards before synthesis.
+- Compare themes, methods, and limitations.
+heuristics:
+- Prefer recent high-signal surveys for orientation.
+- Keep search queries auditable in saved reference metadata.
+tool_preferences:
+- literature_search
+- pdf_reader
+quality_requirements:
+- evidence_before_synthesis
+output_contract:
+  artifact: evidence_backed_review
+resources:
+- id: corpus
+  path: references/research/corpus.md
+  description: 文献库组织与阅读深度
+  when: 需要可追溯文献收集或综述时
+- id: matrix
+  path: references/research/evidence-matrix.md
+  description: 证据综合矩阵
+  when: 需要比较发现、方法与矛盾时

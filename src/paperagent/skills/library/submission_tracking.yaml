@@ -1,0 +1,26 @@
+id: submission_tracking
+capability_type: lifecycle_specific
+version: '1.0'
+layer: task
+scope:
+  task_type: submission
+  lifecycle_types:
+  - paper_conference
+triggers:
+- submission
+- manuscript
+- editor
+- under review
+- revision
+principles:
+- Submission status is domain state, not chat memory.
+- Email-derived state transitions must pass the validator.
+procedure:
+- Parse manuscript id, journal, title, and status.
+- Find the existing submission by manuscript id when possible.
+- Apply a legal status transition and append status history.
+- Notify with the state change and next action.
+quality_requirements:
+- legal_state_transition
+output_contract:
+  domain_object: Submission

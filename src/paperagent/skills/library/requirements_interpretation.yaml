@@ -1,0 +1,46 @@
+id: requirements_interpretation
+version: '1.0'
+name: 申报/投稿/学位材料规则抽取
+layer: general
+capability_type: general
+scope:
+  domain: research_compliance
+triggers:
+- 申报通知
+- 官方指南
+- 申请书模板
+- 作者须知
+- 学校模板
+- blind review
+- submission guidelines
+- 格式要求
+- 材料解析
+- 学位规定
+principles:
+- Official source > current named special requirements > generic writing heuristics; record source, version, URL
+  or file/page, effective date and applicability.
+- Distinguish must/not/limit from preference, principle, recommendation; unverified constraints must not be presented
+  as binding.
+- A document may be informative without establishing an applicable rule. Confirm program, year, applicant class,
+  manuscript type and stage.
+procedure:
+- Identify document type, jurisdiction or issuer, year/version, scope and applicable applicant/venue.
+- Extract eligibility, deadlines, title/keyword/word/page limits, anonymity, required headings, attachment, budget,
+  outputs, ethics/AI disclosure and template/file format.
+- For each rule store value, unit, whether hard/soft, exact cited source location, and consequences; flag contradictions.
+- Map constraints to document sections, workflow actions, validations and user facts needed.
+- Return a compliance matrix and unresolved rule questions.
+anti_patterns:
+- Treating example templates as current official rules without verifying scope.
+- Treating “原则上” or “建议” as absolute law.
+- Guessing a deadline, age restriction or budget from previous-year notices.
+output_contract:
+  artifact: source_grounded_rule_matrix
+  columns:
+  - rule
+  - type
+  - value
+  - applicability
+  - source
+  - verification
+  - status

@@ -1,0 +1,85 @@
+{
+  "goal": "tool budget exhaustion is a first-class outcome, not a crash",
+  "status": "budget_exhausted",
+  "iterations": 5,
+  "steps": [
+    {
+      "iteration": 1,
+      "action": {
+        "action": "search",
+        "query": "tool budget exhaustion is a first-class outcome, not a crash",
+        "max_results": 5,
+        "provider": "offline_stub"
+      },
+      "result": {
+        "status": "ok",
+        "candidates": [
+          {
+            "ref_id": "stub10000paper",
+            "title": "[SYNTHETIC STUB 1] A study on tool budget exhaustion is a first-class outcome, not a crash",
+            "year": 2021,
+            "venue": "Offline Demo Journal",
+            "citation_count": null,
+            "abstract_snippet": null
+          },
+          {
+            "ref_id": "stub20000paper",
+            "title": "[SYNTHETIC STUB 2] A study on tool budget exhaustion is a first-class outcome, not a crash",
+            "year": 2022,
+            "venue": "Offline Demo Journal",
+            "citation_count": null,
+            "abstract_snippet": null
+          },
+          {
+            "ref_id": "stub30000paper",
+            "title": "[SYNTHETIC STUB 3] A study on tool budget exhaustion is a first-class outcome, not a crash",
+            "year": 2023,
+            "venue": "Offline Demo Journal",
+            "citation_count": null,
+            "abstract_snippet": null
+          }
+        ],
+        "hint": "save_reference the useful ones before citing"
+      }
+    },
+    {
+      "iteration": 2,
+      "action": {
+        "action": "save_reference",
+        "ref_id": "stub10000paper"
+      },
+      "result": {
+        "status": "ok",
+        "saved": "stub10000paper"
+      }
+    },
+    {
+      "iteration": 3,
+      "action": {
+        "action": "save_reference",
+        "ref_id": "stub20000paper"
+      },
+      "result": {
+        "status": "ok",
+        "saved": "stub20000paper"
+      }
+    },
+    {
+      "iteration": 4,
+      "action": {
+        "action": "save_reference",
+        "ref_id": "stub30000paper"
+      },
+      "result": {
+        "status": "ok",
+        "saved": "stub30000paper"
+      }
+    },
+    {
+      "iteration": 5,
+      "action": "read_pdf",
+      "note": "tool call budget exhausted (1)"
+    }
+  ],
+  "quality_report": null
+}

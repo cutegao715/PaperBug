@@ -1,0 +1,60 @@
+{
+  "workflows": [
+    {
+      "code": "G1",
+      "workflow_id": "grant_application",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "G2",
+      "workflow_id": "project_midterm_report",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "G3",
+      "workflow_id": "project_final_report",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "P1",
+      "workflow_id": "paper_writing",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "P2",
+      "workflow_id": "venue_matching",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "P3",
+      "workflow_id": "submission_tracking",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "T1",
+      "workflow_id": "thesis_proposal",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "T2",
+      "workflow_id": "thesis_midterm_report",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "T3",
+      "workflow_id": "thesis_writing",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    },
+    {
+      "code": "T4",
+      "workflow_id": "thesis_defense",
+      "entry_steps_decisions_pause_resume_and_chat_route": "passed"
+    }
+  ],
+  "frontend_errors": [],
+  "limitations": [
+    "Only shared controls checked for all ten workflows; complete delivery browser test previously covered T2",
+    "Specialized submission and defense operations still use conversation/advanced views",
+    "File binding requires manually entered paths; partial-scope creation is API-only"
+  ]
+}

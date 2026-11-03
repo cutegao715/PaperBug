@@ -1,0 +1,38 @@
+id: citation_verification
+version: '1.0'
+name: 引用核查
+description: 独立核查引文身份、原文支持与发表状态，可用于任意科研材料。
+capability_type: general
+layer: general
+scope:
+  domain: research_evidence
+triggers:
+- 引用核查
+- 核对参考文献
+- DOI
+- citation verification
+- verify citations
+principles:
+- Bibliographic identity, claim support and publication status are separate checks.
+- Reuse existing references, evidence, materials and source keys; never invent missing
+  metadata.
+procedure:
+- Determine requested scope and read relevant reference records and source material.
+- Choose only applicable internal resources; report checked fields, source locators
+  and unresolved items.
+tool_preferences:
+- reference_resolve
+- pdf_reader
+- page_fetch
+resources:
+- id: identity
+  path: references/general/citation-identity.md
+  description: 引用身份与支持核查
+  when: 核对引文、DOI、原文支持或发表状态时
+- id: evidence
+  path: references/general/evidence-boundaries.md
+  description: 主张的证据边界
+  when: 引用用于支撑关键结论时
+output_contract:
+  artifact: citation_audit
+  checks: Only report checks actually performed; unavailable evidence remains unverified.

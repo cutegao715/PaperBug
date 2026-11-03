@@ -1,0 +1,34 @@
+{
+  "aliases": {
+    "figure_review": "scientific_figure",
+    "grant_writing": "grant_application",
+    "advisor_feedback": "paper_revision",
+    "journal_recommendation": "journal_strategy",
+    "grant_application_general": "grant_application",
+    "english_academic_writing": "academic_writing",
+    "conference_submission": "submission_preparation"
+  },
+  "resources": {
+    "figure_review": {
+      "review": "review"
+    },
+    "grant_writing": {
+      "funder_overlays": "funder_overlays"
+    },
+    "advisor_feedback": {},
+    "journal_recommendation": {},
+    "grant_application_general": {},
+    "english_academic_writing": {
+      "argument": "argument_3",
+      "methods_results": "methods_results",
+      "discussion_summary": "discussion_summary",
+      "english_prose": "english_prose",
+      "displays": "displays",
+      "venue": "venue",
+      "review": "review",
+      "context": "context",
+      "introduction": "introduction"
+    },
+    "conference_submission": {}
+  }
+}

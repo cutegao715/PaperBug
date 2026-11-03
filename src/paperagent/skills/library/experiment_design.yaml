@@ -1,0 +1,40 @@
+id: experiment_design
+capability_type: general
+version: "1.0"
+layer: task
+scope:
+  task_type: experiment
+  project_type: experiment
+triggers:
+  - experiment
+  - protocol
+  - variable control
+  - ablation
+  - 实验
+  - 实验设计
+  - 变量控制
+procedure:
+  - Define objective, hypothesis, variables, controls, materials, procedure, and outcome metrics.
+  - Separate exploratory, confirmatory, pilot, and robustness experiments.
+  - Specify sampling, randomization, blinding, calibration, exclusion rules, and ethics needs when relevant.
+  - Plan data recording, analysis, visualization, and failure handling before running the experiment.
+  - Connect each result table or figure back to a hypothesis or research question.
+heuristics:
+  - A good experiment makes negative or null results interpretable.
+  - Controls should rule out the most plausible alternative explanations, not every imaginable factor.
+anti_patterns:
+  - Changing metrics after seeing results without marking the analysis as exploratory.
+  - Reporting only best-case runs without variance, sample size, or robustness checks.
+checklist:
+  - Independent, dependent, control, and confounding variables are explicit.
+  - Analysis plan and figure plan exist before result interpretation.
+tool_preferences:
+  - file_import
+  - python_analysis
+  - chart_generate
+  - figure_quality_check
+quality_requirements:
+  - experimental_validity
+  - reproducibility
+output_contract:
+  artifact: experiment_protocol

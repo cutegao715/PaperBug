@@ -1,0 +1,332 @@
+id: grant_application
+capability_type: lifecycle_specific
+version: '1.0'
+name: 项目申报与论证
+description: 统一申报方案规划、论证写作与事实检查；按官方申报材料优先，禁止生成虚构基础。
+layer: task
+scope:
+  task_type: grant_application
+  lifecycle_types:
+  - project
+triggers:
+- grant
+- funding
+- 课题
+- 基金
+- 申请书
+- 申报书
+- 论证活页
+- 课题申报
+- 选题
+- grant application
+- proposal writing
+- grant writing
+- proposal
+- budget
+- 申报书撰写
+- 项目申请书
+principles:
+- Match eligibility, deadline, and research direction before drafting.
+- Default to general grant-writing rules unless current application materials provide explicit special rules.
+- Current application materials have higher priority than general heuristics; user-provided facts and constraints
+  have the highest priority.
+- A strong topic comes from a real practice scene, has a clear object and boundary, fits the guide/discipline, has
+  implementation conditions, and can produce concrete deliverables.
+- Policy fit should be written as an explainable link to policy direction, industry transformation needs, or guide
+  priorities, not as a stack of slogans or buzzwords.
+- Do not invent factual materials, prior achievements, partners, data, policy text, references, awards, experiments,
+  or practice effects.
+procedure:
+- Normalize grant notice fields.
+- Match against profile topics and standing intents.
+- Save matched opportunities and create follow-up tasks when requested.
+- For topic selection, evaluate authenticity of the problem, clarity of object, scope, novelty, guide fit, team
+  feasibility, and deliverable clarity.
+- 'Write selection basis with this logic: policy/industry context -> real problem -> gap in existing research/practice
+  -> project entry point -> research value.'
+- If the official application form already gives an outline, strictly follow that outline; use the general section
+  guide only when no explicit structure is available.
+- 'For a complete application, draft by section: selection basis, literature review/current status, research content,
+  objectives, key/difficult points, methods/route, innovation, schedule/results, foundation/conditions.'
+- Write research objectives as problems solved after completion, not work-process items.
+- Keep research objectives to 3-4 items and align each objective with research content and expected outputs.
+- Write research content as what is concretely studied, not activities such as reading literature, sending questionnaires,
+  or writing papers.
+- Structure research content around problem diagnosis, factors/mechanism analysis, model/framework/path construction,
+  application verification, and optimization/promotion.
+- Research content should normally contain 3-5 progressive modules rather than loose parallel items.
+- 'Technical route should explain task sequence, input/output, and logical dependence: problem -> theory/mechanism
+  -> model/method -> validation -> optimization -> deliverables.'
+- Write innovation points from perspective innovation, content/mechanism innovation, or practice/process/tool innovation.
+- 'Write innovation as: how existing work usually does it -> what this project changes -> what problem that difference
+  solves.'
+- Explain each method by what problem it solves in this project; do not simply list method names.
+- Write expected outputs as concrete deliverables such as reports, papers, practice guides, evaluation indicators,
+  models, case/resource libraries, tools, prototypes, or policy suggestions.
+- Extract funder priorities, eligibility, review criteria, deadline, and required sections.
+- Align problem, innovation, feasibility, team capacity, timeline, and expected outputs.
+- Convert research design into work packages with milestones and risks.
+- Tie budget items to methods, data collection, personnel, travel, and dissemination.
+- Check that innovation claims are specific, evidence-backed, and not overpromised.
+- Extract all official eligibility, anonymity, sections, character limits and deadlines before drafting; treat these
+  as verified constraints, not heuristics.
+- Stage confirmations at topic, research design, outline and final review, without interrogating user for nonblocking
+  gaps.
+- Prepare a separate facts-needed list and error/warning/suggestion findings.
+heuristics:
+- Good topics are specific enough to implement but broad enough to have research value.
+- Innovation should be credible and bounded; two or three specific innovation points are usually stronger than broad
+  claims.
+- Research methods must correspond to research questions, data sources, and expected evidence.
+- Expected results should distinguish deliverables from effects; “提升能力” is an effect, not a deliverable.
+- If facts are unavailable, mark them as 待核实 or ask the user instead of guessing.
+- Reviewers reward credible execution as much as originality.
+- Budget narrative should explain necessity, not just list costs.
+anti_patterns:
+- Overlarge titles such as “人工智能赋能教育研究”.
+- Hotspot-only topics without a concrete practice problem.
+- Concept stacking such as “AI+数字化+核心素养+高质量发展”.
+- Only doing a status survey without solution design or validation.
+- Unclear research object, scene, variable, or boundary.
+- A title that sounds innovative while the actual content remains traditional.
+- Piling up policy documents and macro background without connecting them to the project problem.
+- Literature review that only lists studies and does not identify a research/practice gap.
+- Claims such as “首次研究”, “填补国内空白”, or “国内外尚无研究” without strong evidence.
+- Innovation points written as generic praise rather than specific differences in perspective, mechanism, or practice.
+- Research schedule and workload that do not match the project period.
+- Expected outputs that are too many, too high, or unrelated to methods.
+- AI-style repetitive and hollow expressions.
+- Any fabricated data, policy, references, DOI, author, journal, prior achievement, cooperation unit, experiment,
+  practice effect, expert opinion, or quote.
+- Reusing a paper introduction as the project significance section unchanged.
+- Making innovation claims without contrasting the current state of research.
+checklist:
+- Topic has real problem, clear object, bounded scope, guide fit, feasibility, and deliverables.
+- Selection basis answers why now, what is wrong in current practice, and why this project is worth doing.
+- Objectives, contents, methods, steps, and outputs correspond one-to-one.
+- Research content includes more than literature review, questionnaire, and paper writing.
+- Methods state their role in solving project problems.
+- Innovation points are 2-3 credible items and avoid exaggerated uniqueness claims.
+- Expected outputs are concrete deliverables rather than broad effects.
+- Unverified facts are marked 待核实 or asked from the user.
+- Every work package has objective, method, deliverable, schedule, and risk control.
+- Budget lines map to project activities.
+section_writing_guide:
+  selection_basis:
+    default_length: 3-4 logical paragraphs
+    paragraph_plan:
+    - 'Macro context and real demand: policy, industry development, market/social need, or major practical problem;
+      explain why the problem must be studied now.'
+    - 'Specific research problem: narrow from macro context to research object; name 2-3 key contradictions, bottlenecks,
+      management difficulties, or practice challenges.'
+    - 'Existing research/practice gap: state what prior work has solved and what remains unclear, such as unclear
+      mechanisms, incomplete methods, weak scenario adaptation, insufficient validation, or narrow samples.'
+    - 'Project value: briefly state what this project will solve and its theoretical, practical, technical, or application
+      value.'
+    core_logic:
+    - background importance
+    - real problem
+    - specific gap
+    - project necessity
+  literature_review:
+    organization_options:
+    - 'Domestic/foreign split: foreign progress -> domestic progress -> integrated review; use when development
+      paths differ clearly.'
+    - 'Theme/technology split: research progress by theme, method, technology, or application; usually stronger
+      for grant writing.'
+    literature_quantity_reference:
+    - School/provincial/teaching-reform projects often use 5-15 core references.
+    - National social science or natural science grants need a more systematic literature base, often dozens of
+      references.
+    review_logic:
+    - what progress exists
+    - what main paths have formed
+    - what remains unresolved
+    - where this project will break through
+    avoid:
+    - Do not end with generic claims such as 'many studies exist but deficiencies remain' without naming the exact
+      deficiency.
+  research_content:
+    principles:
+    - Every problem raised earlier must have corresponding research content.
+    - Modules should progress logically rather than sit as unrelated parallel items.
+    - Normally use 3-5 core research modules.
+    common_modules:
+    - status identification and problem analysis
+    - mechanism/key factor/key principle research
+    - model, method, technology, or path construction
+    - empirical, experimental, application, or case validation
+    - optimization and promotion
+  research_objectives:
+    count: 3-4 objectives
+    requirements:
+    - Correspond one-to-one with research content.
+    - Describe final problems solved, not the work process.
+    - Be verifiable enough to judge completion.
+    useful_verbs:
+    - reveal/clarify mechanisms
+    - construct/propose models, methods, or technologies
+    - break through/solve key problems
+    - verify effectiveness and applicability
+    avoid:
+    - 提高认识
+    - 加强研究
+    - 深入分析
+    - 促进发展
+  key_and_difficult_points:
+    distinction:
+    - Research focus is the most central content requiring major effort.
+    - Research difficulty is the hardest part in data access, modeling, validation, or breakthrough.
+    - Focus is not the same as difficulty.
+    count: 2-3 items each
+  key_scientific_questions:
+    applicable_to: natural science and engineering/technical grants
+    definition:
+    - A key scientific question asks why a phenomenon occurs, what core mechanism exists, what rule is unexplained,
+      or what theory limits current methods.
+    - It is not a task list, system development plan, or model-building slogan.
+    count: 1-3 questions
+  methods_scheme_route:
+    method_rule:
+    - State which methods will be used and which project problem each method solves.
+    - Do not stack method names.
+    scheme_rule:
+    - Explain how the research will be implemented.
+    route_rule:
+    - Explain logical relation, order, and input/output among research tasks.
+    route_pattern:
+    - problem definition
+    - theory/mechanism analysis
+    - method/model construction
+    - experiment/empirical validation
+    - optimization
+    - deliverables
+  innovation:
+    count: 2-4 items
+    types:
+    - theory innovation
+    - research perspective innovation
+    - method innovation
+    - technology innovation
+    - mechanism innovation
+    - application mode innovation
+    writing_pattern:
+    - existing research practice
+    - this project's difference
+    - the problem solved by that difference
+  annual_plan_and_expected_results:
+    plan_pattern:
+    - time
+    - main tasks
+    - stage outputs
+    common_stages:
+    - literature review, theoretical analysis, and demand research
+    - model/method/technology construction
+    - experiment, empirical research, or case validation
+    - optimization, summary, and output production
+    deliverables:
+    - theoretical model
+    - technical method
+    - research report
+    - paper
+    - patent/software
+    - decision consultation report
+    - teaching scheme
+    - indicator system
+    - case library
+  research_foundation_and_conditions:
+    purpose: Reduce reviewers' concern about feasibility.
+    work_accumulation:
+    - prior related research
+    - existing experiment/research basis
+    - available data
+    - formed methods
+    - built platforms
+    - case resources
+    achievement_rule:
+    - Only list achievements directly related to the project.
+    - Explain which part of this project each achievement supports.
+    conditions:
+    - experimental conditions
+    - data sources
+    - platform conditions
+    - team structure
+    - collaboration resources
+    - implementation scenes
+document_logic_chain:
+- realistic/scientific problem
+- existing research/practice gap
+- research question
+- research content
+- research objectives
+- research methods
+- technical route
+- innovation points
+- expected deliverables
+reviewer_risk_points:
+- Problem is not clearly defined.
+- Research content is disconnected from earlier problem analysis.
+- Objectives do not match research content.
+- Innovation points are not derived from the research gap.
+- Methods cannot support research objectives.
+- Technical route is only a process chart without research logic.
+- Prior foundation is weakly connected to this project.
+- The application tries to do too much and becomes infeasible.
+- Grant guides are repeatedly used as research evidence rather than only as topic-fit constraints.
+- Literature review makes broad conclusions without naming authors, methods, findings, and gaps.
+- AI-style repetition, concept packaging, excessive quotation marks, or colloquial/news-style wording weakens academic
+  credibility.
+- Research methods list many method names but omit sample source, intervention/control conditions, period, variables,
+  indicators, and data source.
+- Innovation points restate research content instead of proving substantive difference from existing research.
+writing_norm_review:
+  checks:
+  - Avoid repeated paragraphs and same-idea paraphrase across sections.
+  - Replace colloquial expressions such as 两张皮, 大水漫灌, 底数不清, 服务好不好, 就业季的突击性工作 with academic descriptions.
+  - Keep quotation marks only for first concept definition, direct quotation, or necessary technical term.
+  - Avoid empty self-evaluation such as 重要意义, 显著提升, 创新性突出, 鲜明时代性 unless supported by facts.
+  - Avoid concept packaging such as 三向匹配, 全链条, 动态反馈闭环, 人机协同 unless definitions and relationships are clear.
+  - Remove unresolved markers such as {{ref:...}}, [待补充], and [待核实] before final delivery.
+academic_quality_review:
+  checks:
+  - Background should follow policy/reality -> concrete facts/evidence -> existing gap -> research necessity.
+  - Application guide fit can be mentioned in topic-fit sections, but should not replace policy, authoritative data,
+    or literature evidence.
+  - Literature review must identify representative authors, methods, conclusions, and unresolved gaps.
+  - Separate research objectives, research content, methods, and expected outputs; do not treat deliverables as
+    research objectives.
+  - Method design must include implementable details such as sample source, interview/questionnaire design, variables,
+    control/contrast, intervention period, evaluation indicators, and data analysis logic.
+  - Innovation should be written as existing research -> unresolved problem -> this project's new view/mechanism/method
+    -> substantive difference.
+  - 'Feasibility requires real conditions: data access, sample size, technical capacity, platform resources, pilot
+    sites, team foundation, and compliance safeguards.'
+  - AI is a means, not the research problem; first define the concrete educational or teaching problem.
+quality_requirements:
+- eligibility_check
+- deadline_awareness
+- topic_specificity
+- guide_fit
+- problem_awareness
+- objective_content_method_alignment
+- credible_innovation
+- feasible_schedule
+- concrete_deliverables
+- factual_integrity
+- funder_fit
+output_contract:
+  artifact: grant_application_or_argument_sheet
+  priority_order:
+  - user_explicit_requirements
+  - extracted_rules_from_current_materials
+  - matched_program_specific_skill
+  - general_grant_application_rules
+tool_preferences:
+- web_search
+- page_fetch
+- html_extract
+resources:
+- id: funder_overlays
+  path: references/research/funder-overlays.md
+  description: 资助类别与要求适配
+  when: 需依据具体指南调整申请材料时

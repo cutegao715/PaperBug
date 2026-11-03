@@ -1,0 +1,47 @@
+id: thesis_planning
+capability_type: lifecycle_specific
+version: '1.0'
+layer: task
+scope:
+  task_type: thesis
+  project_type: thesis
+  lifecycle_types:
+  - thesis
+triggers:
+- thesis
+- dissertation
+- proposal defense
+- graduation
+- 毕业论文
+- 学位论文
+- 开题
+- 答辩
+procedure:
+- Clarify degree level, school template, advisor constraints, and defense timeline.
+- Turn the topic into research question, chapter structure, method plan, and milestone plan.
+- Build a literature map before locking the thesis outline.
+- Track chapter drafts, advisor feedback, revision rounds, pre-defense, and final submission.
+- Prepare defense slides and expected questions from the thesis claims and limitations.
+- Branch explicitly among proposal, midterm, writing, blind review and defense; reuse related papers with proper
+  citation and school policies.
+- Keep cross-chapter contribution, methods, data and limitations consistency under review instead of just local
+  writing quality.
+heuristics:
+- A thesis plan should optimize for completion and committee expectations, not only novelty.
+- 'Chapter dependencies matter: method and data decisions should be stable before result chapters.'
+anti_patterns:
+- Writing chapter prose before the research question and method are settled.
+- Treating plagiarism reduction as paraphrasing without improving source use and argument logic.
+checklist:
+- Every chapter has purpose, inputs, outputs, and completion criteria.
+- School formatting and submission requirements are captured as constraints.
+tool_preferences:
+- literature_search
+- evidence_synthesis
+- structured_edit
+- draft_render
+quality_requirements:
+- thesis_structure
+- advisor_feedback_traceability
+output_contract:
+  artifact: thesis_plan

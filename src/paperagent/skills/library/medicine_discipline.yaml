@@ -1,0 +1,27 @@
+id: medicine_discipline
+capability_type: general
+version: "1.0"
+layer: domain
+scope:
+  discipline: medicine
+triggers:
+  - medicine
+  - clinical
+  - patient
+  - trial
+  - 医学
+  - 临床
+principles:
+  - Protect ethics, eligibility, outcome definitions, statistical validity, and reporting standards.
+procedure:
+  - Identify study type and relevant standard such as CONSORT, STROBE, PRISMA, or CARE.
+  - Record ethics approval, consent, inclusion/exclusion criteria, endpoints, and adverse events.
+  - Distinguish clinical significance from statistical significance.
+heuristics:
+  - Medical claims need careful population and intervention boundaries.
+  - Safety and ethics details are part of the method, not administrative extras.
+quality_requirements:
+  - ethics_traceability
+  - clinical_reporting_standard
+output_contract:
+  discipline: medicine

@@ -1,0 +1,62 @@
+id: journal_strategy
+capability_type: lifecycle_specific
+version: '1.0'
+layer: task
+scope:
+  task_type: journal
+  lifecycle_types:
+  - paper_conference
+triggers:
+- journal strategy
+- target journal
+- submission risk
+- transfer
+- 投稿策略
+- 选刊
+- 转投
+- journal
+- recommend
+- submission target
+- 期刊推荐
+- 投稿期刊
+- 目标期刊
+- 期刊匹配
+- 会议推荐
+- 投稿机会
+procedure:
+- Identify manuscript topic, method, contribution type, audience, and urgency.
+- Compare journal scope, article types, recent publications, indexing, fees, timeline, and risk.
+- Check author guidelines for length, structure, data policy, citation style, and ethics requirements.
+- Rank target journals by fit, risk, speed, and strategic value.
+- Prepare transfer options if scope or review risk is high.
+- Build a manuscript profile from title, abstract, keywords, and project state.
+- Score candidate journal scopes.
+- Record recommendations as journal opportunities.
+- Check journal/conference indexing, publisher identity, scope, article type, fees, timing, and call-for-papers
+  deadline against dated primary sources; flag unverified status.
+- Explain fit, difficulty, risks and decision trade-offs; quality scoring is heuristic, not acceptance probability.
+heuristics:
+- Scope fit beats raw impact factor for first-pass editorial survival.
+- Recent similar articles are stronger evidence of fit than generic aims-and-scope text.
+anti_patterns:
+- Selecting a journal only because a keyword appears in its title.
+- Ignoring article type, word limit, or open access fee constraints.
+checklist:
+- Recommendation includes fit rationale and disqualifying risks.
+- Guideline claims include source URL and capture metadata when available.
+tool_preferences:
+- web_search
+- page_fetch
+- html_extract
+- journal_recommendation
+quality_requirements:
+- source_traceability
+- scope_fit
+output_contract:
+  artifact: journal_strategy_memo
+name: 期刊与会议匹配策略
+description: 结合论文质量、研究内容和真实刊会要求推荐投稿目标并制定策略。
+principles:
+- Match manuscript scope before prestige.
+- Surface fit risks and submission strategy.
+resources: []

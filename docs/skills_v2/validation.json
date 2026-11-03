@@ -1,0 +1,65 @@
+{
+  "skill_count": 35,
+  "resource_paths_pass": true,
+  "catalog_refs_pass": true,
+  "selection_tests": [
+    {
+      "case": "grant",
+      "top_skills": [
+        "grant_application",
+        "academic_writing",
+        "citation_verification",
+        "requirements_interpretation"
+      ]
+    },
+    {
+      "case": "closeout",
+      "top_skills": [
+        "grant_closeout_report",
+        "project_evidence_review",
+        "academic_writing",
+        "citation_verification",
+        "requirements_interpretation"
+      ]
+    },
+    {
+      "case": "midterm-thesis",
+      "top_skills": [
+        "thesis_midterm_report",
+        "thesis_planning",
+        "academic_writing",
+        "citation_verification",
+        "requirements_interpretation"
+      ]
+    },
+    {
+      "case": "defense",
+      "top_skills": [
+        "thesis_planning",
+        "thesis_blind_review_defense",
+        "academic_writing",
+        "citation_verification",
+        "requirements_interpretation"
+      ]
+    },
+    {
+      "case": "venue",
+      "top_skills": [
+        "journal_strategy",
+        "requirements_interpretation",
+        "academic_writing",
+        "citation_verification"
+      ]
+    },
+    {
+      "case": "paper",
+      "top_skills": [
+        "research_question_formulation",
+        "research_design",
+        "academic_writing",
+        "citation_verification",
+        "requirements_interpretation"
+      ]
+    }
+  ]
+}

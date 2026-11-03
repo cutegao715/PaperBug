@@ -1,0 +1,9 @@
+id: task_003_budget_exhaustion
+mode: scripted
+provider: offline_stub
+goal: "iteration budget must stop the loop deterministically"
+policy:
+  max_iterations: 5
+expectations:
+  status: budget_exhausted
+  min_references: 1

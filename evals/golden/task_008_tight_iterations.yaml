@@ -1,0 +1,11 @@
+id: task_008_tight_iterations
+mode: scripted
+provider: offline_stub
+goal: "loop must still complete within a tight but sufficient budget"
+policy:
+  max_iterations: 9
+  max_tool_calls: 6
+expectations:
+  status: finished
+  min_references: 3
+  must_pass_kernel: true

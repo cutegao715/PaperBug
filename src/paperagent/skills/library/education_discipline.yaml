@@ -1,0 +1,27 @@
+id: education_discipline
+capability_type: general
+version: "1.0"
+layer: domain
+scope:
+  discipline: education
+triggers:
+  - education
+  - learning
+  - teaching
+  - classroom
+  - 教育
+  - 教学
+principles:
+  - Align learning theory, intervention, measurement, classroom context, and learner outcomes.
+procedure:
+  - Define learner group, instructional context, intervention, measurement instrument, and comparison.
+  - Track validity of scales, classroom observation protocols, and qualitative coding.
+  - Interpret outcomes with attention to context and implementation fidelity.
+heuristics:
+  - Educational interventions need both design rationale and implementation evidence.
+  - Student outcome claims should identify measurement timing and instrument limits.
+quality_requirements:
+  - intervention_fidelity
+  - measurement_validity
+output_contract:
+  discipline: education

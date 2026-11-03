@@ -1,0 +1,45 @@
+id: research_question_formulation
+version: '1.0'
+name: 研究问题深度设计
+layer: task
+capability_type: general
+scope:
+  domain: research_design
+triggers:
+- 研究问题
+- research question
+- 选题深化
+- 科学问题
+- 研究缺口
+- 创新性分析
+- 选题论证
+- research gap
+- 论文选题
+- 研究问题设计
+principles:
+- A trendy topic is not yet a research question. Frame unknowns or contested mechanisms, not just project activities.
+- Do not assert novelty until related work has been inspected; separate evidence-backed gaps from hypotheses.
+- Keep question, contribution, evidence, method, feasibility and boundary conditions linked.
+procedure:
+- Elicit existing topic and constraints; otherwise propose several feasible directions grounded in user interests
+  and recent literature.
+- Map major prior approaches, what they can explain, and what remains unresolved with cited evidence.
+- Generate candidate primary questions and subquestions; name population, scenario, variables or phenomenon as appropriate.
+- Stress-test novelty, importance, falsifiability or interpretability, data/method feasibility, alternatives and
+  scope.
+- Rank with explicit uncertainties; recommend one question and one minimal validation action; obtain user confirmation
+  before locking research design.
+checklist:
+- Primary question is unambiguous and not equivalent to “build a platform”.
+- The supporting literature has identifiable evidence, not fabricated references.
+- A feasible investigation can answer the question.
+output_contract:
+  artifact: research_question_brief
+  fields:
+  - candidates
+  - gap_evidence
+  - recommended_question
+  - contribution
+  - feasibility
+  - risk
+  - confirmation

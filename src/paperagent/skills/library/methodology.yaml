@@ -1,0 +1,42 @@
+id: methodology
+capability_type: general
+version: "1.0"
+layer: task
+scope:
+  task_type: methodology
+triggers:
+  - methodology
+  - methods
+  - questionnaire
+  - interview
+  - experiment
+  - regression
+  - case study
+  - 方法
+  - 问卷
+  - 访谈
+  - 实验
+procedure:
+  - Classify the design as quantitative, qualitative, mixed, experimental, case-based, or computational.
+  - Specify sample, data source, instrument, procedure, variables, and analysis plan.
+  - Tie each measurement or question item to a construct or research question.
+  - Identify reliability, validity, bias, ethics, and reproducibility checks.
+  - Produce a method limitations note before presenting expected findings.
+heuristics:
+  - For surveys, separate construct definition, item wording, scale source, and validation.
+  - For interviews, separate recruitment, protocol, coding scheme, and saturation logic.
+  - For econometrics, state model, identification assumption, controls, and robustness checks.
+anti_patterns:
+  - Reporting software names as if they justify the method.
+  - Mixing causal language with purely descriptive or correlational designs.
+checklist:
+  - Data collection procedure can be followed by another researcher.
+  - Analysis plan names inputs, transformations, models, and decision rules.
+  - Limitations match actual design constraints.
+tool_preferences:
+  - pdf_reader
+  - evidence_extract
+quality_requirements:
+  - method_validity
+output_contract:
+  artifact: methodology_plan

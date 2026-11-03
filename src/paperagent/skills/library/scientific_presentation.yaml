@@ -1,0 +1,39 @@
+id: scientific_presentation
+version: '1.0'
+name: 科研演示与讲稿
+description: 按受众、时间和已有证据组织组会、会议、项目汇报及答辩演示与讲稿。
+capability_type: general
+layer: task
+scope: {}
+triggers:
+- 科研演示
+- 讲稿
+- 答辩PPT
+- 会议报告
+- slides
+- presentation
+principles:
+- Use only relevant methods; a workflow and a complete setup are not prerequisites.
+- Reuse workspace evidence, sources, versioned drafts and existing review records;
+  never invent research facts or official rules.
+procedure:
+- Read the relevant existing materials and choose internal resources by the current
+  request.
+- Perform only available tools and state the exact checks, unavailable capabilities
+  and remaining review needs.
+resources:
+- id: narrative
+  path: references/research/presentation.md
+  description: 演示叙事、证据与讲稿
+  when: 组织页面、讲稿或问答时
+- id: delivery
+  path: references/research/presentation-delivery.md
+  description: HTML 交付与产物版本
+  when: 生成演示文件或复查来源变化时
+tool_preferences:
+- presentation_build
+- research_output_check
+output_contract:
+  artifact: requested_research_output
+  checks: Report only work actually performed; source linkage does not certify scientific
+    validity or compliance.

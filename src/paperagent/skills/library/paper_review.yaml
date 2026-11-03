@@ -1,0 +1,84 @@
+id: paper_review
+capability_type: general
+version: '1.0'
+name: 论文评审
+description: 对论文、章节或投稿材料开展有证据的评审；按研究方法选择专项资源，支持历史意见复核，可独立于写作和回复审稿人使用。
+layer: task
+scope:
+  lifecycle_types:
+  - paper_conference
+  - thesis
+triggers:
+- 论文评审
+- 评审论文
+- 审阅论文
+- 审稿
+- 论文审查
+- 科学性评审
+- peer review
+- review my paper
+- critique
+- manuscript review
+- regression check
+principles:
+- Review-only requests authorize analysis and a separate review artifact; manuscript changes depend on the user's
+  request.
+- Select only applicable review dimensions and resources using the actual study, current scope and available sources.
+  No workflow or fixed pass order is required.
+- Distinguish severity, evidence certainty, coverage, source authority and issue status. A preference is not automatically
+  a submission blocker.
+- Author replies and closed comment threads do not prove manuscript repairs. Locate the change in the exact current
+  artifact.
+- Saved reviews and accepted follow-ups are reviewer judgments, not verified scientific facts or guaranteed venue
+  compliance.
+procedure:
+- Establish the requested scope, current candidate and available companion artifacts; reuse confirmed manuscript
+  terminology, argument boundaries and applicable venue records.
+- Read the general review resource and only the method, display or cross-round resources needed for this request.
+- Anchor material findings to actual passages, evidence and bounded repairs; record unavailable evidence and no-change
+  outcomes where useful.
+- For a persistent report, use save_paper_review with the hashes returned by read_draft. Save paper-specific proposals
+  in existing manuscript records only when justified.
+- Use record_review_followup only for issues worth revisiting; agent follow-ups remain proposals until user adoption.
+  Re-read changed sources on resumption.
+anti_patterns:
+- Requiring a full profile, a fixed number of comments, four repeated whole-paper passes or R1–R4 progression for
+  every review.
+- Treating common statistical cutoffs, an advisor preference or archived project precedent as a universal requirement.
+- Inferring AI authorship, inventing analyses or copying facts from another manuscript.
+resources:
+- id: general
+  path: references/review/general.md
+  description: 评审依据、范围与意见表达
+  when: 需要评价论文或某一部分的质量和问题时
+- id: quantitative
+  path: references/review/quantitative.md
+  description: 定量研究、测量与 SEM
+  when: 量表、潜变量、SEM 或统计推断实际支撑论文主张时
+- id: computational
+  path: references/review/computational.md
+  description: 计算模型、机器学习与 LLM
+  when: 仿真、ML、LLM、生成数据或智能体评估是实际研究方法时
+- id: water
+  path: references/review/water.md
+  description: 水资源、人地耦合与不确定性
+  when: 研究对水资源政策、自然人类系统或相关不确定性提出实质主张时
+- id: flood
+  path: references/review/flood.md
+  description: 洪水、水动力与灾害风险
+  when: 洪水、水动力、暴露脆弱性或灾害损失模型支撑研究结论时
+- id: displays
+  path: references/review/displays.md
+  description: 图表、符号与派生量来源
+  when: 方程、复合指标、变换或聚合后的图表数值需要核对时
+- id: rounds
+  path: references/review/rounds.md
+  description: 历史意见、修订轮次与回归复核
+  when: 用户提供历史意见、回复、版本或要求确认修改是否完成时
+- id: continuity
+  path: references/review/continuity.md
+  description: 保存报告与跨轮次上下文
+  when: 评审报告需要保留、继续讨论或持续复核个别问题时
+output_contract:
+  artifact: scoped_review_memo
+  checks: Report actual coverage, source basis, located findings and readiness limits; never certify unread artifacts.

@@ -1,0 +1,29 @@
+id: research_radar
+capability_type: general
+version: '1.0'
+layer: task
+scope:
+  task_type: radar
+triggers:
+- radar
+- opportunity
+- grant
+- journal
+- standing intent
+principles:
+- Notify only when the opportunity is plausibly useful.
+- Store all matches as domain opportunities before notifying.
+procedure:
+- Fetch candidate items from configured sources.
+- Deduplicate against existing opportunity records.
+- Match against ResearchProfile and StandingIntent.
+- Evaluate notification value and record the reason.
+- Maintain user-consented standing intents by research project/topic and periodically check primary scholarly/CFP/grant
+  sources.
+- Deduplicate discoveries and suppress already-dismissed topics; include relevance explanation, date/source, and
+  actionable next decision.
+quality_requirements:
+- deduplication
+- notification_value
+output_contract:
+  domain_object: Opportunity

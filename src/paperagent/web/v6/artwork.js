@@ -1,0 +1,1 @@
+window.paperbugArtwork={motions:{idle:'/v6/af629bf4825c3863.png',peek:'/v6/6bef393c2cbc3fd0.png',call:'/v6/819ac71be5775bf0.png',interact:'/v6/819ac71be5775bf0.png',follow:'/v6/beec938939cbbd12.png',working:'/v6/4d2ae8b78864539b.png'},thumbs:['/v6/1bcc01759f2c8a8f.jpg','/v6/8bf6fba69e23d739.jpg','/v6/87cabb32ae1b2802.jpg']};

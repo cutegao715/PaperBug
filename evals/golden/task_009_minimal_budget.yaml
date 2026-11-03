@@ -1,0 +1,10 @@
+id: task_009_minimal_budget
+mode: scripted
+provider: offline_stub
+pdf: true
+goal: "tool budget exhaustion is a first-class outcome, not a crash"
+policy:
+  max_iterations: 12
+  max_tool_calls: 1
+expectations:
+  status: budget_exhausted

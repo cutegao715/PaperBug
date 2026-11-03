@@ -1,0 +1,10 @@
+id: task_005_mba_thesis_goal
+mode: scripted
+provider: offline_stub
+pdf: true
+goal: "MBA 论文文献综述：数字化转型对企业绩效的影响"
+expectations:
+  status: finished
+  min_references: 3
+  min_evidence: 1
+  must_pass_kernel: true

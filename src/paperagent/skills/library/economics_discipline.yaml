@@ -1,0 +1,27 @@
+id: economics_discipline
+capability_type: general
+version: "1.0"
+layer: domain
+scope:
+  discipline: economics
+triggers:
+  - economics
+  - econometrics
+  - identification
+  - policy evaluation
+  - 经济
+  - 计量
+principles:
+  - Separate descriptive evidence, identification assumptions, causal claims, and policy interpretation.
+procedure:
+  - Specify model, data, sample, variables, identification strategy, and robustness checks.
+  - Check endogeneity, omitted variables, selection, and measurement error.
+  - Report economic magnitude as well as statistical significance.
+heuristics:
+  - Causal language requires an explicit identification argument.
+  - Robustness checks should challenge the main identifying assumptions.
+quality_requirements:
+  - identification_validity
+  - robustness_traceability
+output_contract:
+  discipline: economics

@@ -1,0 +1,38 @@
+id: systematic_review_prisma
+version: '1.0'
+name: 系统综述与PRISMA
+layer: task
+capability_type: general
+scope:
+  domain: systematic_review
+triggers:
+- 系统综述
+- PRISMA
+- meta-analysis
+- scoping review
+- 荟萃分析
+- systematic review
+- 文献筛选流程
+principles:
+- Only call a review systematic if protocol, reproducible searches, screening and exclusion logs actually exist.
+- Use current applicable reporting guidelines, such as PRISMA 2020 for systematic review and PRISMA-ScR for scoping
+  review; do not invent screening counts.
+procedure:
+- Frame protocol and eligibility criteria using PICO/PECO/PCC or the appropriate discipline structure.
+- Plan multi-database reproducible searches and record exact strategies, dates and raw counts.
+- Deduplicate with an auditable method; record title/abstract and full-text exclusions with reasons.
+- Assess study risk of bias and evidence quality as appropriate; choose narrative or quantitative synthesis justified
+  by heterogeneity.
+- Prepare PRISMA flow and checklist from observed counts; link each included study to verified citations.
+anti_patterns:
+- Describing a narrative review as PRISMA-compliant without records.
+- Pretending to have searched subscription databases without access.
+output_contract:
+  artifact: systematic_review_protocol_and_audit
+  fields:
+  - protocol
+  - search_log
+  - screening_log
+  - included_corpus
+  - synthesis
+  - reporting_checklist

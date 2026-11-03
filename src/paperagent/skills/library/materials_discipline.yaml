@@ -1,0 +1,27 @@
+id: materials_discipline
+capability_type: general
+version: "1.0"
+layer: domain
+scope:
+  discipline: materials
+triggers:
+  - materials
+  - synthesis
+  - characterization
+  - microscopy
+  - 材料
+  - 表征
+principles:
+  - Connect synthesis conditions, characterization evidence, structure-property relationships, and performance claims.
+procedure:
+  - Record materials, preparation conditions, instruments, parameters, controls, and repeatability.
+  - Link figures such as spectra, microscopy, and performance curves to claims.
+  - Check units, sample labels, calibration, and comparison baselines.
+heuristics:
+  - Performance improvement claims require fair comparison and consistent testing conditions.
+  - Figure captions should include enough conditions for interpretation.
+quality_requirements:
+  - experimental_repeatability
+  - figure_claim_alignment
+output_contract:
+  discipline: materials

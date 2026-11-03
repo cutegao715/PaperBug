@@ -1,0 +1,10 @@
+id: task_002_pdf_evidence
+mode: scripted
+provider: offline_stub
+pdf: true
+goal: "verify PDF reading and evidence quote capture"
+expectations:
+  status: finished
+  min_references: 2
+  min_evidence: 1
+  must_pass_kernel: true

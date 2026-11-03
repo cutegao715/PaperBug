@@ -1,0 +1,40 @@
+id: research_design
+capability_type: general
+version: "1.0"
+name: 研究设计
+description: 推敲研究问题、理论、方法与可行性的对应关系，可用于项目、论文和学位研究。
+layer: task
+scope:
+  task_type: research_design
+triggers:
+  - research design
+  - research question
+  - theory
+  - hypothesis
+  - variable
+  - 研究设计
+  - 研究问题
+  - 理论框架
+principles:
+  - Align the research question, theory, constructs, data, and method before drafting.
+  - Treat variables and hypotheses as testable commitments, not decorative labels.
+procedure:
+  - Identify the phenomenon, population, context, and unit of analysis.
+  - Convert the topic into one primary research question and optional sub-questions.
+  - Map each construct to a theoretical role, operational definition, and observable indicator.
+  - Check whether hypotheses, data sources, and methods can answer the same question.
+  - Record boundary conditions, assumptions, and threats to validity.
+heuristics:
+  - If a variable cannot be observed or measured, mark it as conceptual until operationalized.
+  - Prefer one coherent theoretical frame over a list of loosely related theories.
+anti_patterns:
+  - Listing methods before the research question is stable.
+  - Introducing variables that never appear in hypotheses, instruments, or analysis.
+checklist:
+  - Research question is specific enough to guide sampling and analysis.
+  - Every hypothesis names direction, constructs, and expected relationship.
+  - Method choice is justified by the question, not by convenience alone.
+quality_requirements:
+  - method_design_alignment
+output_contract:
+  artifact: research_design_brief

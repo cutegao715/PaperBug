@@ -1,0 +1,36 @@
+id: reproducibility_reporting
+version: '1.0'
+name: 可复现性与科研透明披露
+layer: task
+capability_type: general
+scope:
+  domain: research_integrity
+triggers:
+- 可复现
+- 数据可得性
+- 代码开放
+- reproducibility
+- data availability
+- ethics statement
+- AI disclosure
+- 开放科学
+- 结果复核
+principles:
+- Every disclosure is a verifiable factual assertion at submission time, not empty boilerplate.
+- Do not claim data/code deposit, ethics approval, registration, reproducibility or author consent without evidence.
+procedure:
+- Identify target venue/degree guidelines and required transparency statements.
+- Inventory datasets, preprocessing, analysis scripts, model versions, seeds, environments, ethics documentation
+  and access restrictions.
+- Draft precise data/code availability, author contribution, competing interest, funding and AI-use disclosures
+  as applicable.
+- Check accessions, repository links, labels and permission scope; note inaccessible or missing items.
+- Report reproducibility gaps and remediation actions without representing a planned upload as completed.
+output_contract:
+  artifact: reproducibility_and_disclosure_checklist
+  fields:
+  - requirements
+  - confirmed_assets
+  - draft_statements
+  - unverified_claims
+  - gaps

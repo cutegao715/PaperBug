@@ -1,0 +1,1 @@
+{"product":"PaperAgent","models":{"primary":{},"fast":{}},"tools":{"disabled":[]},"features":{"radar_cloud_notify":false},"budget":{"context_input_tokens":24000,"section_ratios":{}}}

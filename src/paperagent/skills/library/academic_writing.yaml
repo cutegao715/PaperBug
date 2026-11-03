@@ -1,0 +1,113 @@
+id: academic_writing
+capability_type: general
+version: '1.0'
+name: 跨语言学术写作
+description: 面向基金、论文、学位论文的循证写作，按语言选择中文或英文表达指南。
+layer: general
+scope:
+  domain: research_writing
+triggers:
+- write
+- draft
+- revise
+- academic writing
+- 英文论文
+- 英文学术
+- 英文摘要
+- 论文写作
+- 期刊论文
+- 会议论文
+- english manuscript
+- academic paper
+- introduction
+- abstract
+- manuscript
+- discussion
+principles:
+- Make claims explicit and tie them to evidence.
+- Separate outline, drafting, and revision work.
+- Preserve evidence, author-confirmed terminology and scientific meaning; never invent citations, results or mechanisms.
+- Choose guidance by requested action, textual scope, change impact and available evidence, not a mandatory writing
+  order.
+- Use the existing manuscript context, source files and conversation; do not create a second memory or task system.
+- Apply journal/conference requirements only to the named venue, article type, track and publication stage with
+  a dated source.
+procedure:
+- Clarify target artifact and audience.
+- Build an evidence-backed outline.
+- Draft with citation placeholders only for saved references.
+- Run citation integrity checks before finishing.
+- Read relevant confirmed manuscript records and current material; proposals and prior prose are not proof of research
+  facts.
+- Select only the internal guides needed for this request or an affected dependency.
+- For substantive prose, identify reader function, narrow claim, supporting evidence, explanation and relation to
+  adjacent text.
+- Check the exact revised candidate at the requested depth; disclose unavailable sources and affected files requiring
+  attention.
+- Keep ordinary edits lightweight. A workflow, complete outline or fully populated manuscript registry is not a
+  prerequisite.
+- Use English-specific reference guides only for English manuscripts and adapt to the actual venue and genre.
+checklist:
+- Every factual claim has evidence or is framed as a hypothesis.
+- References used in the draft exist in the project database.
+tool_preferences:
+- literature_search
+- pdf_reader
+quality_requirements:
+- citation_integrity
+output_contract:
+  artifact: markdown_draft
+resources:
+- id: argument
+  path: references/general/argument.md
+  description: 跨材料的论证组织
+  when: 推敲结构、论证或读者功能时
+- id: prose
+  path: references/general/prose.md
+  description: 保留含义的语言修订
+  when: 润色、压缩、转写或改善衔接时
+- id: evidence
+  path: references/general/evidence-boundaries.md
+  description: 证据与主张边界
+  when: 承重主张或来源需要核对时
+- id: argument_3
+  path: references/english/argument.md
+  description: 研究问题、贡献与段落论证
+  when: 需要提纲、引言、研究定位或论证结构修改时
+- id: methods_results
+  path: references/english/methods-results.md
+  description: 方法、结果与证据边界
+  when: 撰写或审查方法、结果、数值与研究设计时
+- id: discussion_summary
+  path: references/english/discussion-summary.md
+  description: 讨论、局限、结论与摘要
+  when: 解释发现、总结贡献、修改摘要或结论时
+- id: english_prose
+  path: references/english/english-prose.md
+  description: 英文学术表达与局部修改
+  when: 润色、压缩、改善句段衔接、统一术语或中英转写时
+- id: displays
+  path: references/english/displays.md
+  description: 图表、公式与补充材料协同
+  when: 图表说明、交叉引用、正文和补充材料需要对应时
+- id: venue
+  path: references/english/venue.md
+  description: 期刊、会议及不同出版阶段的要求
+  when: 按目标刊会调整稿件、准备投稿或会议终稿时
+- id: review
+  path: references/english/review.md
+  description: 分范围评审、返修与变更影响
+  when: 要求评审、核对修订影响或回复审稿意见时
+- id: context
+  path: references/english/context.md
+  description: 论文术语、论证与来源的持续管理
+  when: 长期论文写作、恢复讨论、术语变更或刊会要求变化时
+- id: introduction
+  path: references/english/introduction.md
+  description: 引言与研究背景
+  when: 撰写或修改论文引言时
+heuristics: []
+anti_patterns:
+- Forcing Introduction–Methods–Results–Discussion on every genre or requiring authors to write in that order.
+- Rotating established terms to reduce repetition or strengthening claims during English polishing.
+- Reporting a pattern scan as scientific validation, journal compliance or AI authorship detection.

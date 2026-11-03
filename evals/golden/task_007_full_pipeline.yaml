@@ -1,0 +1,10 @@
+id: task_007_full_pipeline
+mode: scripted
+provider: offline_stub
+pdf: true
+goal: "end-to-end: search, save, read, evidence, draft, validate, finish"
+expectations:
+  status: finished
+  min_references: 3
+  min_evidence: 1
+  must_pass_kernel: true

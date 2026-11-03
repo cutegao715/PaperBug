@@ -1,0 +1,47 @@
+id: scientific_figure
+version: '1.0'
+name: 科研图表制作与审查
+description: 科研图表规划、制作指导、质量审查；操作按任务选择。
+capability_type: general
+layer: task
+scope: {}
+triggers:
+- 科研图表
+- 画图
+- 数据图
+- 技术路线图
+- scientific figure
+- plot
+- 图表检查
+- 图表审查
+- 图中文字
+- figure review
+- figure QA
+principles:
+- Use only relevant methods; a workflow and a complete setup are not prerequisites.
+- Reuse workspace evidence, sources, versioned drafts and existing review records; never invent research facts or
+  official rules.
+procedure:
+- Read the relevant existing materials and choose internal resources by the current request.
+- Perform only available tools and state the exact checks, unavailable capabilities and remaining review needs.
+resources:
+- id: planning
+  path: references/research/figure-planning.md
+  description: 图表类型、真实数据与空间样式
+  when: 规划或制作图表时
+- id: review
+  path: references/research/figure-review.md
+  description: 图表检查与修订
+  when: 需要核对产物或改图时
+tool_preferences:
+- chart_generate
+- diagram_generate
+- figure_style
+- figure_quality_check
+output_contract:
+  artifact: requested_research_output
+  checks: Report only work actually performed; source linkage does not certify scientific validity or compliance.
+heuristics: []
+anti_patterns: []
+checklist: []
+quality_requirements: []

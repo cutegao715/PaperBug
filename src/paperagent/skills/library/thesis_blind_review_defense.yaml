@@ -1,0 +1,36 @@
+id: thesis_blind_review_defense
+version: '1.0'
+name: 学位论文盲审与答辩
+layer: task
+capability_type: lifecycle_specific
+scope:
+  lifecycle_types:
+  - thesis
+  task_type: thesis_defense
+triggers:
+- 盲审
+- 毕业答辩
+- 学位答辩
+- 论文匿名
+- 开题答辩
+- thesis defense
+- dissertation defense
+principles:
+- Institutional blind-review and defense requirements must be verified for the correct university, degree and year.
+- Keep simulated reviewer concerns distinct from actual anonymous review comments.
+- Never hide critical methodological limitations or fabricate defense answers.
+procedure:
+- Read current thesis, supervisor feedback and institutional blind-review/defense guidance.
+- Audit structure, argument, citation, method, figure and anonymity; identify metadata and self-identifying mentions.
+- Simulate high-risk examiner questions anchored to exact chapters and evidence.
+- When real blind-review comments exist, produce issue -> action -> evidence -> revised section tracker.
+- Build defense presentation storyline with contribution, evidence, limitations, likely questions and honest answers.
+- Prepare final archival checklist only after user confirms actual defense outcomes.
+output_contract:
+  artifact: thesis_defense_package
+  fields:
+  - blind_review_check
+  - review_issue_tracker
+  - defense_outline
+  - question_bank
+  - final_submission_checklist

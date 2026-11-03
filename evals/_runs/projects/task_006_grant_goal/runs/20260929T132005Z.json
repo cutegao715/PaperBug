@@ -1,0 +1,135 @@
+{
+  "goal": "grant proposal background section on research writing assistants",
+  "status": "finished",
+  "iterations": 6,
+  "steps": [
+    {
+      "iteration": 1,
+      "action": {
+        "action": "search",
+        "query": "grant proposal background section on research writing assistants",
+        "max_results": 5,
+        "provider": "offline_stub"
+      },
+      "result": {
+        "status": "ok",
+        "candidates": [
+          {
+            "ref_id": "stub10000paper",
+            "title": "[SYNTHETIC STUB 1] A study on grant proposal background section on research writing assistants",
+            "year": 2021,
+            "venue": "Offline Demo Journal",
+            "citation_count": null,
+            "abstract_snippet": null
+          },
+          {
+            "ref_id": "stub20000paper",
+            "title": "[SYNTHETIC STUB 2] A study on grant proposal background section on research writing assistants",
+            "year": 2022,
+            "venue": "Offline Demo Journal",
+            "citation_count": null,
+            "abstract_snippet": null
+          },
+          {
+            "ref_id": "stub30000paper",
+            "title": "[SYNTHETIC STUB 3] A study on grant proposal background section on research writing assistants",
+            "year": 2023,
+            "venue": "Offline Demo Journal",
+            "citation_count": null,
+            "abstract_snippet": null
+          }
+        ],
+        "hint": "save_reference the useful ones before citing"
+      }
+    },
+    {
+      "iteration": 2,
+      "action": {
+        "action": "save_reference",
+        "ref_id": "stub10000paper"
+      },
+      "result": {
+        "status": "ok",
+        "saved": "stub10000paper"
+      }
+    },
+    {
+      "iteration": 3,
+      "action": {
+        "action": "save_reference",
+        "ref_id": "stub20000paper"
+      },
+      "result": {
+        "status": "ok",
+        "saved": "stub20000paper"
+      }
+    },
+    {
+      "iteration": 4,
+      "action": {
+        "action": "save_reference",
+        "ref_id": "stub30000paper"
+      },
+      "result": {
+        "status": "ok",
+        "saved": "stub30000paper"
+      }
+    },
+    {
+      "iteration": 5,
+      "action": {
+        "action": "write_draft",
+        "filename": "draft.md",
+        "content": "# Literature overview (scaffold): grant proposal background section on research writing assistants\n\n> Offline scaffold produced by ScriptedAgent for walking-skeleton\n> verification. Statements are placeholders pending real reading.\n\n## Overview\n\n- {{ref:stub10000paper}} The literature landscape includes work on [SYNTHETIC STUB 1] A study on grant proposal background section on research writing assistants (2021).\n- {{ref:stub20000paper}} The literature landscape includes work on [SYNTHETIC STUB 2] A study on grant proposal background section on research writing assistants (2022).\n- {{ref:stub30000paper}} The literature landscape includes work on [SYNTHETIC STUB 3] A study on grant proposal background section on research writing assistants (2023).\n\n## Next steps\n\n- Replace scaffold statements with evidence-backed claims.\n- Verify every quote against its source page.\n"
+      },
+      "result": {
+        "status": "ok",
+        "draft": "draft.md",
+        "kernel": {
+          "errors": [],
+          "warnings": [
+            "cited ref 'stub10000paper' has no evidence card (weak grounding)",
+            "cited ref 'stub20000paper' has no evidence card (weak grounding)",
+            "cited ref 'stub30000paper' has no evidence card (weak grounding)"
+          ]
+        }
+      }
+    },
+    {
+      "iteration": 6,
+      "action": {
+        "action": "finish",
+        "summary": "offline scaffold draft written and validated"
+      },
+      "result": {
+        "status": "ok",
+        "done": true,
+        "kernel": {
+          "errors": [],
+          "warnings": [
+            "cited ref 'stub10000paper' has no evidence card (weak grounding)",
+            "cited ref 'stub20000paper' has no evidence card (weak grounding)",
+            "cited ref 'stub30000paper' has no evidence card (weak grounding)"
+          ]
+        }
+      }
+    }
+  ],
+  "quality_report": {
+    "citation_integrity": {
+      "kernel": "citation_integrity",
+      "errors": [],
+      "warnings": [
+        "cited ref 'stub10000paper' has no evidence card (weak grounding)",
+        "cited ref 'stub20000paper' has no evidence card (weak grounding)",
+        "cited ref 'stub30000paper' has no evidence card (weak grounding)"
+      ],
+      "stats": {
+        "citations": 3,
+        "references_in_db": 3,
+        "evidence_cards": 0
+      }
+    },
+    "generated_at": "2026-09-29T13:20:05+00:00"
+  }
+}

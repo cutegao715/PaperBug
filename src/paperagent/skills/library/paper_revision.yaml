@@ -1,0 +1,69 @@
+id: paper_revision
+capability_type: general
+version: '1.0'
+layer: task
+scope:
+  task_type: revise
+triggers:
+- revise
+- rewrite
+- restructure
+- polish
+- logic
+- 降重
+- 重写
+- 论文修改
+- advisor
+- supervisor
+- feedback
+- 导师
+- 修改意见
+procedure:
+- 'Identify the revision unit: sentence, paragraph, section, argument chain, or whole manuscript.'
+- Preserve claims, citations, and evidence anchors unless the user asks to change them.
+- Improve topic sentence, claim-evidence-reasoning flow, transitions, and contribution framing.
+- Check whether local edits require abstract, introduction, method, or conclusion updates.
+- Run citation and evidence consistency checks before finalizing.
+- Extract each advisor instruction, preference, and prohibition.
+- Separate manuscript-local edits from project-wide writing rules.
+- Detect conflicts between advisor feedback, evidence, journal rules, and existing draft structure.
+- Apply high-level structural guidance before sentence-level polishing.
+- Store durable preferences as memory or project skill candidates.
+heuristics:
+- Rewrite for argument function first, style second.
+- Reduce repetition by merging overlapping claims rather than deleting needed evidence.
+- Repeated wording comments usually imply a style rule, not just a one-off edit.
+- If feedback is ambiguous, propose a conservative interpretation and mark what needs confirmation.
+anti_patterns:
+- Paraphrasing cited evidence so aggressively that the claim changes.
+- Adding uncited factual claims during polishing.
+- Treating advisor comments as copyediting only.
+- Removing evidence-backed nuance to satisfy an overly broad rewrite instruction.
+checklist:
+- Revised text still supports the same or explicitly updated claim.
+- Citation placeholders remain valid and attached to the relevant sentence or paragraph.
+- Each feedback item is either applied, deferred with reason, or flagged for clarification.
+- Global rules are visible before future drafting.
+tool_preferences:
+- structured_edit
+- quality_check
+quality_requirements:
+- citation_integrity
+- evidence_consistency
+- feedback_traceability
+output_contract:
+  artifact: revised_manuscript_section
+resources:
+- id: argument
+  path: references/general/argument.md
+  description: 修订论证结构
+  when: 需重组论证时
+- id: prose
+  path: references/general/prose.md
+  description: 科学含义保护
+  when: 局部修订或润色时
+name: 论文修改与意见处理
+description: 统合导师意见处理、局部修改与全文结构修订，逐条跟踪反馈闭环。
+principles:
+- Preserve explicit advisor constraints as project-level rules unless superseded.
+- Convert broad feedback into concrete edit operations and recurring checks.
